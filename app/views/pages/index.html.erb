@@ -1,0 +1,27 @@
+
+<table>
+  <thead>
+    <tr>
+      <th>URL</th>
+      <th>H1</th>
+      <th>H2</th>
+      <th>H3</th>
+      <th>links</th>
+
+    </tr>
+  </thead>
+    <tbody>
+      <% @pages.each do |page|%>
+        <tr><td><%= page.page_location %></td>
+        <td><%= page.h1_data %></td>
+        <td><%= page.h2_data %></td>
+        <td><%= page.h3_data %></td>
+        <td><%= page.links_data %>
+        </td></tr>
+      <% end %>
+    </tbody>
+ 
+
+   </table>
+
+   <%= link_to 'Back', new_page_path %>

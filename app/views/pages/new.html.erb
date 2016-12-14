@@ -1,0 +1,16 @@
+<h1>New URL</h1>
+ 
+ <%= link_to 'See History', pages_path %>
+
+<%= form_for @page do |f| %>
+ 
+  <p>
+    <%= f.label :page_location %><br>
+    <%= f.text_field :page_location %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+ 
+<% end %>
